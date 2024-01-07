@@ -164,10 +164,8 @@ print('\n2:\nComponente în frecvență: '+str(nz)+
 prag=0.001 # prag MSE de 0.1%
 
 def jpgaux3(X,Q,m,n):
-    temp0=np.zeros((m,n,3))
     temp0=cv2.cvtColor(X.astype(np.float32)/256,cv2.COLOR_RGB2YCR_CB)*256
     Y0=np.zeros((int(8*np.ceil(m/8)),int(8*np.ceil(n/8)),3))
-    Y=np.zeros((m,n,3))
     temp1=np.zeros((m,n,3))
     nz=0
     nz_jpeg=0
