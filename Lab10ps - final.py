@@ -31,8 +31,8 @@ mu=np.array([1,1]).astype(float) # media
 A=Matrix([[1,3/5],[3/5,2]]) # matricea de covarianta
 (U,J)=A.LDLdecomposition()
 # J nu contine pe diagonala valorile proprii (este, totusi, o matrice diagonala)
-# U si J pot fi calculate numai daca A este simetrica si pozitiv definita
-# (este implicat algoritmul Cholesky, nu are nucio treaba cu valorile proprii)
+# U si J pot fi calculate numai daca A este simetrica 
+# in plus, A trebuie sa fie pozitiv definita pentru ca J sa aiba valori pozitive
 # U este o matrice inferior triunghiulara, cu 1 pe diagonala principala;
 # daca am calcula U si J din descompunerea Jordan (cu valori proprii),
 # U transpus nu ar fi inversa lui U
@@ -69,7 +69,6 @@ ax[1].set_title('2-d')
 #%%
 
 # 2 - conform curs
-# cine sunt x si y ? Nu scrie in curs.
 
 print('\n2 - conform curs:')
 N=250
