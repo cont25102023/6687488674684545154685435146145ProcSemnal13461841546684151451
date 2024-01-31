@@ -1,0 +1,2 @@
+https://github.com/tudorcoman/proc-semnale/blob/main/Proiect/Prophet
+https://github.com/lowLevelGod/Procesarea-Semnalelor/blob/main/Proiect/FFT
